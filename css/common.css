@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+html {
+    scroll-behavior: smooth;    
+}
+    
+img {
+    display: block;
+}
+
+body {
+    background-color: white;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #4e3939;
+}
+
+#testo {
+    width: 100%;
+    max-width: 990px;
+    margin: 0 auto;
+    padding: 100px 50px;
+    text-align: center;
+}
+
+#testo h1 {
+    margin: 0;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    line-height: 70px;
+    padding-bottom: 20px;
+    color: #ee7560;
+}
+
+header {
+    background-color: white;
+    padding: 10px 0;
+}
+
+header img {
+    margin: 0 auto;
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+}
+
+.pulsante {
+    color: #fff;
+    background: #ee7560;
+    border: 2px #ee7560 solid;
+    text-decoration: none;
+    display:inline-block;
+    margin-top: 20px;
+    padding: 10px 30px 10px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.pulsante:hover {
+    background: white;
+    color: #ee7560;
+}
+
+#vantaggi {
+    background: #f8f3f0;
+    padding: 100px 50px;
+}
+
+#vantaggi .flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /*gap: 30px;*/
+}
+
+#vantaggi .flex-container .flex-item {
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    /*background: white;
+    border-radius: 20px;*/
+}
+
+#vantaggi h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    padding: 0 0 10px;
+    color: #ee7560;
+}
+
+#form {
+    width: 100%;
+    max-width: 990px;
+    margin: 0 auto;
+    padding: 100px 50px;
+}
+
+#form h2 {
+    text-align: center;
+    padding: 0 0 20px;
+    font-family: 'Pacifico', cursive;
+    color: #ee7560;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+#form .flex-form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#form .flex-form .inputDiv {
+    width: 33.3%;
+    padding: 20px;
+    text-align: center;
+}
+
+#form .flex-form .inputDiv label,
+#form .flex-form .sceltaPrivacy {
+    display: block;
+    text-align: left;
+    padding: 0 15px 10px;
+    font-size: 14px;
+}
+
+#form .flex-form .sceltaPrivacy {
+    margin: auto auto auto 10px;
+}
+
+#form .flex-form .sceltaPrivacy input[type="radio"] {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+#form .flex-form .inputDiv.larghezza100 {
+    width: 100%;
+}
+
+#form .flex-form .inputDiv input[type="text"],
+#form .flex-form .inputDiv input[type="email"],
+#form .flex-form .inputDiv select,
+#form .flex-form .inputDiv textarea {
+    width: 100%;
+    display: block;
+    background:#fafafa;
+    border-radius: 5px;
+    padding: 15px;
+    border: none;
+    font-size: 15px;
+    /*outline: none;*/
+    outline-color: #ee7560;
+}
+
+#form .flex-form .inputDiv select option {
+    font-size: 15px;
+}
+
+#form .flex-form .inputDiv textarea {
+    resize: none;
+    height: 100px;
+}
+
+footer {
+    padding: 100px 50px;
+    font-size: 12px;
+    text-align: center;
+    color:white;
+    background-color: black;
+}
+
+footer a {
+    color: white;
+}
+
+
+@media all and (max-width: 990px) {
+
+    body {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    #testo {
+        padding: 50px 20px;
+    }
+
+    #testo h1 {
+        margin: 0;
+        font-size: 30px;
+        line-height: 50px;
+        padding-bottom: 10px;
+    }
+
+    #vantaggi {
+    padding: 50px 20px;
+    }
+
+    #vantaggi .flex-container {
+        flex-wrap: wrap;
+    }
+
+    #vantaggi .flex-container .flex-item {
+        width: 100%;
+    }
+
+    #form {
+        padding: 50px 20px;
+    }
+
+    #form h2 {
+        padding: 0 0 10px 0;
+        font-size: 30px;
+    }
+
+    #form .flex-form .inputDiv {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    footer {
+        padding: 50px 20px;
+    }
+
+}

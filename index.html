@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="it">
+
+    <head>
+        <title>Benvenuti su Bakery</title>
+        <meta charset="utf-8">
+        <meta name="description" content="La nostra landing per la nostra pasticceria!">
+        <meta name="author" content="Francesca Belfiore">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&display=swap" rel="stylesheet"> 
+
+        <link rel="stylesheet" media="all" href="css/normalize.css">
+        <link rel="stylesheet" media="all" href="css/common.css">
+    
+    </head>
+
+    <body>
+        <header>
+            <img src="img/logo.png" width="150" height="150" alt="Bakery" >
+        </header>
+
+        <div id="hero">
+            <picture>
+                <source media="(min-width: 991px)" srcset="img/top-d.jpg">
+                <img src="img/top-m.jpg" alt="A banner full of pastries" width="700" height="700" >
+                <!--<img src="img/top-d.jpg" alt="A banner full of pastries" width="1920" height="750">-->
+            </picture>
+        </div>
+
+        <div id="testo">
+            <h1>Benvenuti su Bakery</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ipsum enim saepe vero cumque tempora obcaecati numquam modi nostrum, cupiditate reprehenderit est. Alias labore illo rem perspiciatis. Eum, eius labore.</p>
+            <a href="#form" class="pulsante">Contattaci</a>
+        </div>
+
+        <div id="vantaggi">
+            <div class="flex-container">
+                <div class="flex-item">
+                    <h2>Vantaggio 1</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eaque rerum, animi dolore voluptas voluptates pariatur assumenda incidunt inventore porro deserunt? Nemo eligendi qui ad explicabo iure exercitationem voluptas provident.</p>
+                </div>
+                <div class="flex-item">
+                    <h2>Vantaggio 2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illo ratione doloremque, quos adipisci esse nihil quibusdam sed atque asperiores sint ipsum reiciendis rem corporis nulla corrupti inventore natus accusantium.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="form">
+
+            <form id="mioform" name="mioform" action="#">
+                
+                <h2>Contattaci</h2>
+
+                <div class="flex-form">
+
+                    <div class="inputDiv">
+                        <label for="reparto">Seleziona il reparto*</label>
+                        <select name="reparto" id="reparto" required>
+                            <option value="opzione 1">Opzione 1</option>
+                            <option value="opzione 2">Opzione 2</option>
+                            <option value="opzione 3">Opzione 3</option>
+                        </select>
+                    </div>
+
+                    <div class="inputDiv">
+                        <label for="nome">Nome e Cognome*</label>
+                        <input type="text" name="nome" id="nome" placeholder="Scrivi qui il tuo nome e cognome" required>
+                    </div>
+
+                    <div class="inputDiv">
+                        <label for="email">Email*</label>
+                        <input type="email" name="email" id="email" placeholder="Scrivi qui il tuo indirizzo email" required>
+                    </div>
+
+                    <div class="inputDiv larghezza100">
+                        <label for="testoForm">Messaggio*</label>
+                        <textarea name="testoForm" name="testoForm" id="testoForm" placeholder="Scrivi qui il tuo messaggio" required></textarea>
+                    </div>
+
+                    <div class="sceltaPrivacy">
+                        <h3>Accettazione della privacy</h3>
+
+                        <label for="privacySi">Sì</label>
+                        <input type="radio" name="privacy" id="privacySi" value="Sì">
+
+                        <label for="privacyNo">No</label>
+                        <input type="radio" name="privacy" id="privacyNo" value="No">
+                    </div>
+
+                    <div class="inputDiv larghezza100">
+                        <input type="submit" name="submitForm" id="submitForm" value="Invia il form" class="pulsante">
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+        <footer>
+            <p>Edgemony P.Iva 12345678911 - Credits by <a href="https://www.linkedin.com/in/francescabelfiore/" target="_blank">Francesca Belfiore</a></p>
+        </footer>
+    </body>
+
+</html>
